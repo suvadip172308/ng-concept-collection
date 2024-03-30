@@ -1,0 +1,25 @@
+<h2>First Child Component</h2>
+
+<ng-template #radioListRef let-labelName="label" let-listLabel="listLabel">
+  <label>{{labelName}}</label>
+  <input type="radio" [name]="listLabel"/>
+</ng-template>
+
+<app-second-child
+  [templateRef]="radioListRef"
+  [values]="['Male', 'Female', 'Shemale']"
+  listLabel="Gender"
+></app-second-child>
+
+<hr/>
+
+<app-second-child
+  [templateRef]="radioListRef"
+  [values]="['Veg', 'Non-Veg']"
+  listLabel="Food"
+></app-second-child>
+
+
+
+
+

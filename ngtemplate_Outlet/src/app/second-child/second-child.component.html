@@ -1,0 +1,8 @@
+<h3>Second Child Component</h3>
+<p>{{listLabel}}</p>
+<ng-container *ngFor="let value of values">
+  <ng-container *ngTemplateOutlet="templateRef; context: {
+    label: value,
+    listLabel: listLabel
+  }"></ng-container>
+</ng-container>

@@ -1,0 +1,12 @@
+<div class="photo-container">
+  <div class="slider-item">
+    <button (click)="changeSlide(-1)">Previous</button>
+  </div>
+  <div class="slider-item">
+    <ng-content></ng-content>
+  </div>
+  <div class="slider-item">
+    <button (click)="changeSlide(1)">Next</button>
+  </div>
+</div>
+
